@@ -12,6 +12,12 @@
     content="width=device-width, initial-scale=1.0"
   >
   <title>Monochrome</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -22,8 +28,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <section class="header-top">
+  <header class="header container">
+    <div class="header-top-content">
       <section class="header-social-media">
         <ul>
           <li>
@@ -78,56 +84,66 @@
           <a
             href="tel:+44 (0)10 2345 6789"
             title="Call us"
-          ></a>
+          >Call us +44 (0)10 2345 6789 </a>
         </section>
         <!-- /.header-customer-support -->
 
-        <section class="header-user-controls">
-          <ul>
-            <li>
-              <form action="/">
-                <input
-                  type="text"
-                  name="search"
-                  id="search"
-                  required
+        <div class="header-controls">
+          <section class="search">
+            <ul>
+              <li>
+                <form action="/">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="search"
+                    required
+                  >
+                  <button
+                    type="submit"
+                    name="submit"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </section>
+          <!-- /.search -->
+          <section class="user controls">
+            <ul>
+              <li>
+                <a
+                  href=""
+                  title="My account"
                 >
-                <button type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </form>
-            </li>
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </li>
 
-            <li>
+              <li>
+                <a
+                  href=""
+                  title="wishlist"
+                >
+                  <i class="fa-solid fa-heart"></i>
+                </a>
+              </li>
+
               <a
                 href=""
-                title="My account"
+                title="Cart"
               >
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
               </a>
-            </li>
-
-            <li>
-              <a
-                href=""
-                title="wishlist"
-              >
-                <i class="fa-solid fa-heart"></i>
-              </a>
-            </li>
-
-            <a
-              href=""
-              title="Cart"
-            >
-              <i class="fa-solid fa-cart-arrow-down"></i>
-            </a>
-          </ul>
-        </section>
+            </ul>
+          </section>
+        </div>
         <!-- /.header-user-constrols -->
       </section>
       <!-- ./header-connect -->
-    </section>
+    </div>
     <!-- /.header-top -->
 
     <section class="header-bottom">
